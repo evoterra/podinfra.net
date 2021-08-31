@@ -1,0 +1,11 @@
+Accessibility is a growing factor for podcasts, which tend to be audio-only. For people with hearing loss (historically a large portion of the podcast listening audience) displaying in-line subtitles as podcast episodes play is a big help.
+
+Interfacing with services like [Google’s Speech-To-Text service](https://cloud.google.com/speech-to-text) introduces complexity. However, many podcast hosting companies are now allowing podcasters to include text-based file(s) with their podcast episodes, declared in the `<podcast:transcript>` tag. The example below shows the tag, as well as the two podcast:transcript tags:
+
+`<enclosure url="https://pdst.fm/e/podcasts.captivate.fm/media/156229c8-c8b0-4db5-9b1c-840436d693b9/pps4e27-when-pointless-podcasting-processes-pay-off.mp3" length="10035001" type="audio/mpeg" />`
+`<podcast:transcript url="https://transcripts.captivate.fm/transcript/edf8e864-6f6a-4b1b-b05b-dc47d223e3e5/transcript.srt" type="application/srt" rel="captions" />`
+`<podcast:transcript url="https://transcripts.captivate.fm/transcript/edf8e864-6f6a-4b1b-b05b-dc47d223e3e5/index.html" type="text/html" />`
+
+Note there are mutiple types of transcripts. The second in this example is marked by `rel=captions`, indicating the reference file is formatted as .SRT, with timestamps and (possibly) speaker names.
+
+_Tip:_ Listeners have been trained by "closed captions" for decades now and expect to see the words on-screen, progressing as the content plays. Do your best to emulate this behavior on the screen of your listening app.
