@@ -4,7 +4,7 @@ title: Don't mess with the audio file request
 
 ## Don't mess with the audio file request
 
-While a podcaster publishes an RSS feed to be reproduced inside your app to help you link to their episode, their audio file is their property, and must not be changed. In particular:
+While a podcaster publishes an RSS feed to be reproduced inside your app to help you link to their episode, their audio file is their property, and must not be changed in any material way. In particular:
 
 * **Ensure you do not change or remove any query strings** that have been added to the audio URL: the audio may not play without them.
 
